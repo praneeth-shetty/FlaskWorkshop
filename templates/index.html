@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="card shadow p-3 mb-5 bg-body rounded position-absolute top-50 start-50 translate-middle" style="width: 30rem;">
+  <img src={{ img_link }} class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Random {{ animal }} images from the internet.</p>
+    <a href="/{{ animal }}" class="btn btn-primary">{{ sound }}</a>
+  </div>
+</div>
+{% endblock %}
